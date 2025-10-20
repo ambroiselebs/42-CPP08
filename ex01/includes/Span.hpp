@@ -31,7 +31,12 @@ class Span
 		int		longestSpan() const;
 
 		template<typename Iterator>
-		void	addNumbers(Iterator begin, Iterator end);
+		void	addNumbers(Iterator begin, Iterator end) {
+			while (begin != end) {
+				addNumber(*begin);
+				++begin;
+			}
+		}
 
 		class FullSpanException : public std::exception
 		{

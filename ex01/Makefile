@@ -1,6 +1,6 @@
-NAME = ducpp
+NAME = span
 
-SRC = main.cpp
+SRC = main.cpp src/Span.cpp
 
 OBJ = $(SRC:.cpp=.o)
 
